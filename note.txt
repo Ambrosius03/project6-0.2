@@ -1,0 +1,22 @@
+@media (min-width: 576px)
+@media (min-width: 768px)
+@media (min-width: 992px)
+@media (min-width: 1200px)
+@media (min-width: 1400px)
+
+
+<ul>
+ <li id=" grid1">
+<img class="image" src="nft3.jpg"></img>
+      <div class="info">
+        <span>Busines</span>
+      </div>
+    <div class="btnn1">
+      <a href="#" class="likee"><i class='bx bx-bookmark'></i></a>
+      <a href="#" class="share"><i class='bx bx-share'></i></a>
+      <a href=""MODUL_KALKULUS_1_PROGRAM_STUDI_INFORMATI.pdf" class="read"><i class='bx bx-book-open'></i></a>
+    </div>
+    </div>
+</li>
+
+</ul>

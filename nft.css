@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root{
+  
+  --primary-color:#F3F3E7;
+  --secondary-color:#212121;
+  --king-color:#ddd8ab;
+  --quen-color:#000;
+}
+  .dark-theme{ 
+  --primary-color:#4A4947;
+  --secondary-color:#b8b7b0;
+  --king-color:#b1a29f;
+  --quen-color:#fff;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',Sans-Serif;
+}
+body{
+  height: 100vh;
+  background-color:var(--primary-color) ;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mode{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+ .mode #mode{
+ text-decoration: none;
+ color: #000;
+ width:20px ;
+ cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  margin-left:1rem;
+  margin-top:1rem ;
+}
+
+.logo h1{
+color: var(--secondary-color);
+}
+
+.logo span{
+  color: var(--secondary-color);
+  font-size: small;
+  font-weight: 400;
+}
+.search{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  border:2px solid var(--secondary-color);
+  border-radius: 15px;
+  width: 230px;
+  margin-top:5rem;
+  margin-right:-3rem ;
+}
+.search .input{
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.search .search-icon{
+  color: var(--secondary-color);
+  display: flex;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+.section{
+  display: flex;
+  margin-top:1.5rem ;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.section .button li .active{
+  border:2px solid #000;
+  background-color: #000;
+  border-radius: 15px;
+  width: 65px;
+  color: #fff;
+}
+
+.section .button a{
+  text-decoration: none;
+  color: var(--quen-color);
+}
+
+.section .button{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+
+ .section .tombol{
+  list-style: none;
+  display:none;
+ }
+
+
+.section .button li a{
+  border: 2px solid var(--king-color);
+  border-radius:15px;
+  background-color:var(--king-color);
+  width:auto; 
+}
+
+.container .catalog #calculus li{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  height:250px;
+  width: 150px;
+}
+
+.catalog #calculus{
+  list-style: none;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content:center;
+  gap: 2.5rem;
+}
+
+.container .catalog #calculus li #image{
+  border-radius: 10px;
+  box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+  background:rgba(255,255,255,0.1);
+}
+
+.container .catalog #calculus li #image:hover{
+  opacity: 0.5;
+}
+
+.container .catalog #calculus li .title{
+  display: flex;
+  justify-content: space-between;
+  margin-top:1.5rem ;
+  gap:1rem;
+}
+.container .catalog #calculus li .title span{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.container .catalog #calculus li .button{
+  display: flex;
+  justify-content:center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.container .catalog #calculus li .button a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.section .hide_button{
+  display: none;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1rem;
+  height:250px;
+  width: 150px;
+  border-radius:10px ;
+  box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+  z-index: 99;
+}
+
+.section .hide_button .close{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4px;
+}
+
+.section .hide_button .close:hover{
+  color: red;
+}
+
+.section .hide_button li a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  margin-top: 0.5rem;
+}
+
+.tombol .menu{
+  text-decoration: none;
+  color:var(--secondary-color);
+}
+
+.hide_button .close{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.hide_button .close:hover{
+  color:red;
+}
+
+
+
+
+/*meedia screen*/
+@media (max-width: 676px){
+   
+  .catalog #calculus{
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:center;
+    gap: 3.5rem;
+  }
+  
+  .section .button li a{
+    display: none;
+  }
+
+ .section .tombol{
+    display:flex;
+    justify-content:flex-start;
+    margin-left: -4rem;
+  }
+
+  .search{
+    display: flex;
+    justify-content:center;
+  }
+
+  .logo .brand{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*akan da perubahaan lagi pada bagian bawah ini
+.container .grid2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  height:250px;
+  width: 150px;
+}
+.grid2 .image{
+  border-radius: 10px;
+}
+.grid2 .info{
+  display: flex;
+  justify-content: space-between;
+  margin-top:1.5rem ;
+  gap:1rem;
+}
+.grid2 .info span{
+  font-size: 14px;
+}
+.grid2 .info button{
+  border: none;
+  background: transparent;
+}
+.grid2 p{
+  margin-top:0.5rem ;
+  font-weight: 600;
+}
+
+
+/*akan da perubahaan lagi pada bagian bawah ini
+.container .grid3{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  height:250px;
+  width: 150px;
+}
+.grid3 .image{
+  border-radius: 10px;
+}
+.grid3 .info{
+  display: flex;
+  justify-content: space-between;
+  margin-top:1.5rem ;
+  gap:1rem;
+}
+.grid3 .info span{
+  font-size: 14px;
+}
+.grid3 .info button{
+  border: none;
+  background: transparent;
+}
+.grid3 p{
+  margin-top:0.5rem ;
+  font-weight: 600;
+}
+
+/*akan da perubahaan lagi pada bagian bawah ini
+.container .grid4{
+ display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 1rem; 
+}
+.container .grid4 .range{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
+.container .grid4 .range #input{
+  outline: none;
+  color: #000;
+  background-color: #000;
+  width:250px ;
+}
+
+.container .grid4 .color{
+  display: flex;
+  flex-direction: column;
+  margin-top:1rem ;
+  gap:0.5rem;
+}
+
+.container .grid4 .text{
+  display: flex;
+  border: 2px solid #000;
+  border-radius:8px;
+  width: 250px;
+}
+.container .grid4 .text #color{
+  border:none ;
+  outline: none;
+  background: transparent;
+  text-align: left;
+}
+
+.container .grid4 .likes{
+  display: flex;
+  flex-direction: column;
+  margin-top:1rem ;
+  gap:0.5rem;
+}
+
+.container .grid4 .text{
+  display: flex;
+  border: 2px solid #000;
+  border-radius:8px;
+  width: 250px;
+}
+.container .grid4 .text #likes{
+  border:none ;
+  outline: none;
+  background: transparent;
+  text-align: left;
+}
+.container .grid4 span{
+  font-weight: 600;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-top:2.5rem ;
+}
+footer a{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;border:2px solid #000;
+  background-color: #000;
+  border-radius: 15px;
+  width: 150px;
+}
+.ft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-top:3rem;
+  opacity: 0.5;
+  font-size: 10px;
+}
